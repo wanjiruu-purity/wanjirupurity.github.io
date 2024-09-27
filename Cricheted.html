@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized Flowers</title>
+    <link rel="stylesheet" href="Home.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Set a base font for the body */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        header {
+    background-color: rgb(146, 106, 113); /* Background color for the header */
+    color: aliceblue; /* Text color */
+    text-align: center; /* Center the text */
+    border:5px solid black;
+        }
+
+        h1 {
+            font-size: 30px; /* Font size for the header */
+            margin: 0; /* Remove margin */
+        }
+
+        p {
+            font-size: 18px; /* Font size for the paragraph */
+            margin-top: 10px; /* Add margin to the top for spacing */
+            margin-bottom: 0; /* Remove bottom margin if needed */
+        }
+
+        .flex-container {
+            display: flex; /* Enable flexbox */
+            flex-flow: row wrap; /* Arrange items in a row and allow wrapping */
+            background-color: rgb(146, 106, 113);
+            justify-content: space-evenly; /* Evenly distribute items */
+            align-items: flex-start; /* Align items to the top of the container */
+            margin:5px solid black;
+            padding: auto;
+        }
+
+        .flex-item {
+            color: aliceblue;
+            background-color: rgb(0, 0, 0);
+            width: 180px; /* Fixed width for items */
+            height: 300px; /* Fixed height for items */
+            margin: 10px; /* Space between items */
+            text-align: center; /* Center text inside items */
+            line-height: 180px; /* Center text vertically */
+            font-size: 30px; /* Font size */
+        }
+
+        .flex-item img {
+            max-width: 100%; /* Make images responsive */
+            height: 250px; /* Maintain aspect ratio */
+        }
+
+        footer {
+            background-color: rgb(146, 106, 113); /* Footer background color */
+            color: aliceblue; /* Text color */
+            text-align: center; /* Center the text */
+            padding: 10px 0; /* Smaller padding for the footer */
+            margin:5px solid black;
+        }
+
+        .social-menu {
+            list-style: none; /* Remove default list style */
+            padding: 0; /* Remove default padding */
+        }
+
+        .social-menu li {
+            display: inline; /* Display list items inline */
+            margin: 0 10px; /* Space between social icons */
+        }
+
+        .contact-footer {
+            margin-top: 10px; /* Space above contact info */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: rgb(77, 14, 14);">Customized Flowers<br> to Your Liking</h1>
+        <p>Explore our beautiful selection of personalized flower arrangements designed just for you.</p>
+        <button style="padding: 5px;"><a href="Home.html">Go Back</a></button>
+    </header>
+
+    <div class="flex-container">
+        <div class="flex-item"><img src="assets/crocheted1.jpg" alt="img1"></div>
+        <div class="flex-item"><img src="assets/crocheted2.jpg" alt="img2"></div>
+        <div class="flex-item"><img src="assets/crocheted3.jpg" alt="img3"></div>
+        <div class="flex-item"><img src="assets/crocheted1.jpg" alt="img4"></div>
+        <div class="flex-item"><img src="assets/crocheted2.jpg" alt="img3"></div>
+        <div class="flex-item"><img src="assets/crocheted3.jpg" alt="img4"></div>
+    </div>
+
+    <footer>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="wrapper">
+                <div class="form-wrapper">
+                    <form action="#">
+                        <input type="email" placeholder="Enter your email" required>
+                        <input type="submit" id="submit" value="Subscribe">
+                    </form>
+                </div>
+                <div class="contact-wrapper">
+                    <ul class="social-menu">
+                        <li><a href="https://www.bing.com/ck/a?!&&p=06b174748edd8fa42479ee6a85ca8aec3398b06865209d3ec5c88989f671e3e5JmltdHM9MTcyNzM5NTIwMA&ptn=3&ver=2&hsh=4&fclid=06e53c96-7ec0-69fd-0450-29927fdd68ad&psq=x&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS94Lg&ntb=1">X</i></a></li>
+                        <li><a href="https://www.bing.com/ck/a?!&&p=60d6e8ad2fd3e475da6f53c5ef84d0c9937de1fd031cc27a26e18a8882ef4409JmltdHM9MTcyNzM5NTIwMA&ptn=3&ver=2&hsh=4&fclid=06e53c96-7ec0-69fd-0450-29927fdd68ad&psq=facebook&u=a1aHR0cHM6Ly9ubC1ubC5mYWNlYm9vay5jb20v&ntb=1">Facebook</i></a></li>
+                        <li><a href="https://www.bing.com/ck/a?!&&p=761678a7bbae67a0e007b9553ced1f9c51c1b36c85716097946755bb7837655aJmltdHM9MTcyNzM5NTIwMA&ptn=3&ver=2&hsh=4&fclid=06e53c96-7ec0-69fd-0450-29927fdd68ad&psq=ins&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS8&ntb=1">Instagram</i></a></li>
+                      </ul>
+                    <div class="contact-footer">
+                        <p class="contact-tel">Phone: 123-456-7890</p>
+                        <p class="contact-email">Email: info@flowershop.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
